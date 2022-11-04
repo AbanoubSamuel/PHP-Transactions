@@ -1,0 +1,91 @@
+html,
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.taskLink a {
+    font-size: 30px;
+    color: #343139;
+    text-decoration: none;
+		border-bottom: .125em solid #ff6407;
+		box-shadow: inset 0 -0.125em 0 #ff6407;
+		transition: box-shadow 270ms cubic-bezier(0.77, 0, 0.175, 1), color 270ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.taskLink a:hover {
+    box-shadow: inset 0 -1.125em 0 #ff6407;
+    color: #000;
+}
+
+.taskLink a:focus {
+    background: #fff;
+    outline: none;
+    background: #ff6407;
+    color: #fff;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/*   Paypal Payment and manage transactions   */
+
+.credit_number {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    background-color: #5b6dcd;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.transactionsTableDev {
+    width: 90%;
+}
+
+/*   Autocomplete text box with manager   */
+
+#search-box {
+    padding: 10px;
+    border: #a8d4b1 1px solid;
+    border-radius: 4px;
+}
+
+.frmSearch {
+    width: 320px;
+}
+
+.autocomplete_text {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.autocomplete_text.loading {
+    background:white url("/loading.gif") no-repeat right center;
+}
+
+#suggestion-list {
+    position: absolute;
+    width: 190px;
+    float: left;
+    list-style: none;
+    margin: 1px -32px;
+}
+
+#suggestion-list li {
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom: #bbb9b9 1px solid;
+}
+
+#suggestion-list li:hover {
+    background: #ece3d2;
+    cursor: pointer;
+}
